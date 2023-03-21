@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Empresas</title>
+</head>
+<body>
+    {% for empresa in tabela_empresas %}
+    <h1>{{ empresa[0] }}</h1>
+    <img src="data:image/png;base64,{{ empresa[1] }}">
+    {% endfor %}
+</body>
+</html>
